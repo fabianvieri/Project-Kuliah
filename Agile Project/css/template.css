@@ -1,0 +1,21 @@
+.nav-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: width .3s;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
+
+.my-navbar {
+    background: rgba(0, 0, 0, 0.3) !important;
+}
+
+footer ul li a {
+    color: white;
+}

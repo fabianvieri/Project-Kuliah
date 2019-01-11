@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/template.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="image/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Borrow</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top my-navbar">
+        <a class="navbar-brand" href="#">This Library</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapse-target">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="collapse-target">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="catalogue.html">Catalogue</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="borrow.html">Borrow</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+            </ul>
+            <div class="btn-group">
+                <button type="button" class="btn btn-info btn-sm"> <i class="fa fa-user-circle-o"></i> Fabian Vieri</button>
+                <button type="button" class="btn btn-info dropdown-toggle dropdown-toggle-split btn-sm" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    <span class="sr-only">Toggle Dropdown</span>
+                </button>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="notification.html">Notification <span class="badge badge-light">4</span></a>
+                    <a class="dropdown-item" href="edit.html">Edit Profile</a>
+                    <a class="dropdown-item" href="login.html">Log Out</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <div class="jumbotron mb-0 rounded-0 text-center header bg-danger">
+        <div class="container text-center">
+            <h1 class="display-3">WELCOME TO THIS LIBRARY</h1>
+            <p class="text-center">Our library is one of the best in the world</p>
+        </div>
+    </div>
+    <div class="container-fluid bg-primary">
+        <h2 class="pt-2 text-white">Borrow Book</h2>
+        <br>
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link active text-dark" data-toggle="tab" href="#home">Search Books</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark" data-toggle="tab" href="#menu1">Your Holds</a>
+            </li>
+        </ul>
+
+        <!-- Tab panes -->
+        <div class="tab-content">
+            <div id="home" class="container-fluid tab-pane active"><br>
+                <h3>Search Books</h3>
+                <form>
+                    <div class="form-row">
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="Search">
+                        </div>
+                        <div class="col">
+                            <button class="btn btn-danger my-2 my-sm-0" type="submit" onclick="func()">Search</button>
+                        </div>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" id="inlineCheckbox1" name="option">
+                        <label class="form-check-label" for="inlineCheckbox1">All</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" id="inlineCheckbox2" name="option">
+                        <label class="form-check-label" for="inlineCheckbox2">Author</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" id="inlineCheckbox3" name="option">
+                        <label class="form-check-label" for="inlineCheckbox3">Title</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" id="inlineCheckbox3" name="option">
+                        <label class="form-check-label" for="inlineCheckbox3">Genre</label>
+                    </div>
+                </form>
+                <div class="container mx-0">
+                    <div class="row p-3">
+                        <div class="col-md-1 p-0">
+                            <img src="image/prism.png" alt="..." class="img-thumbnail" width="100" height="100">
+                        </div>
+                        <div class="col-md-11">
+                            <div class="row">
+                                <div class="col">
+                                    <p class="mb-0">Title : Petualangan Si Bolang <br> Copy : 5 <br> Price : 2000/day</p>
+                                </div>
+                                <div class="col">
+                                    <button type="button" class="btn btn-danger float-right">Hold</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="my-1">
+                    <div class="row p-3">
+                        <div class="col-md-1 p-0">
+                            <img src="image/prism.png" alt="..." class="img-thumbnail" width="100" height="100">
+                        </div>
+                        <div class="col-md-11">
+                            <div class="row">
+                                <div class="col">
+                                    <p class="mb-0">Title : Petualangan Si Bolang <br> Copy : 5 <br> Price : 2000/day</p>
+                                </div>
+                                <div class="col">
+                                    <button type="button" class="btn btn-danger float-right">Hold</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="my-1">
+                    <div class="row p-3">
+                        <div class="col-md-1 p-0">
+                            <img src="image/prism.png" alt="..." class="img-thumbnail" width="100" height="100">
+                        </div>
+                        <div class="col-md-11">
+                            <div class="row">
+                                <div class="col">
+                                    <p class="mb-0">Title : Petualangan Si Bolang <br> Copy : 5 <br> Price : 2000/day</p>
+                                </div>
+                                <div class="col">
+                                    <button type="button" class="btn btn-danger float-right">Hold</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="menu1" class="container-fluid tab-pane fade p-2"><br>
+                <h3>Your Holds</h3>
+                <table class="table table-bordered mb-0">
+                    <thead>
+                        <tr>
+                            <th scope="col">No</th>
+                            <th scope="col">Title</th>
+                            <th scope="col">Publisher</th>
+                            <th scope="col">Author</th>
+                            <th scope="col">Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Title 1</td>
+                            <td>Publisher 1</td>
+                            <td>Author 1</td>
+                            <td>Waiting
+                                <button type="button" class="btn btn-danger btn-sm float-right fa fa-remove"></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Title 2</td>
+                            <td>Publisher 2</td>
+                            <td>Author 2</td>
+                            <td>Ready - 1d:20h
+                                <button type="button" class="btn btn-danger btn-sm float-right fa fa-remove"></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Title 3</td>
+                            <td>Publisher 3</td>
+                            <td>Author 3</td>
+                            <td>Waiting
+                                <button type="button" class="btn btn-danger btn-sm float-right fa fa-remove"></button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="px-4 pt-4 mt-0 bg-dark text-white">
+        <div class="row">
+            <div class="col-12 col-md">
+                <img class="mb-2" src="image/logo.png" alt="" width="32" height="32">
+                <small class="d-block mb-3 text-muted">&copy; 2018-2019</small>
+            </div>
+            <div class="col-6 col-md">
+                <h5>Features</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="text-muted" href="#">Cool stuff</a></li>
+                    <li><a class="text-muted" href="#">Random feature</a></li>
+                    <li><a class="text-muted" href="#">Team feature</a></li>
+                    <li><a class="text-muted" href="#">Stuff for developers</a></li>
+                    <li><a class="text-muted" href="#">Another one</a></li>
+                    <li><a class="text-muted" href="#">Last time</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-md">
+                <h5>Resources</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="text-muted" href="#">Resource</a></li>
+                    <li><a class="text-muted" href="#">Resource name</a></li>
+                    <li><a class="text-muted" href="#">Another resource</a></li>
+                    <li><a class="text-muted" href="#">Final resource</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-md">
+                <h5>About</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="text-muted" href="#">Team</a></li>
+                    <li><a class="text-muted" href="#">Locations</a></li>
+                    <li><a class="text-muted" href="#">Privacy</a></li>
+                    <li><a class="text-muted" href="#">Terms</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
