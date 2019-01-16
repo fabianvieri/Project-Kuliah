@@ -15,8 +15,8 @@
 <body>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top my-navbar">
-        <a class="navbar-brand" href="#">This Library</a>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top my-navbar content-font">
+        <a class="navbar-brand" href="#">Fabian's Library</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapse-target">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -37,13 +37,13 @@
                 </li>
             </ul>
             <div class="btn-group">
-                <button type="button" class="btn btn-info btn-sm"> <i class="fa fa-user-circle-o"></i> Fabian Vieri</button>
-                <button type="button" class="btn btn-info dropdown-toggle dropdown-toggle-split btn-sm" data-toggle="dropdown"
+                <button type="button" class="btn my-button btn-sm"> <i class="fa fa-user-circle-o"></i> Fabian Vieri</button>
+                <button type="button" class="btn my-button dropdown-toggle dropdown-toggle-split btn-sm" data-toggle="dropdown"
                     aria-haspopup="true" aria-expanded="false">
                     <span class="sr-only">Toggle Dropdown</span>
                 </button>
                 <div class="dropdown-menu dropdown-menu-right">
-                    <a class="dropdown-item" href="notification.html">Notification <span class="badge badge-light">4</span></a>
+                    <a class="dropdown-item" href="notification.html">Notification <span class="badge badge-danger">4</span></a>
                     <a class="dropdown-item" href="edit.html">Edit Profile</a>
                     <a class="dropdown-item" href="login.html">Log Out</a>
                 </div>
@@ -52,40 +52,58 @@
     </nav>
 
     <!-- Header -->
-    <div class="jumbotron mb-0 rounded-0 text-center header bg-danger">
-        <div class="container text-center">
-            <h1 class="display-3">WELCOME TO THIS LIBRARY</h1>
-            <p class="text-center">Our library is one of the best in the world</p>
+    <div class="jumbotron mb-0 rounded-0 header">
+        <div class="container ">
+            <h1 class="title-font" style="color: #9e332b; font-size: 65.94pt;
+            text-shadow: 3px 3px 30px white;">Preserving
+                The Past,</h1>
+            <h1 class="display-2 header-font text-center ml-5 text-white" style="font-size: 65.94pt;">opening the
+                future</h1>
         </div>
     </div>
 
     <!-- Content -->
-    <div class="jumbotron mb-0 rounded-0 bg-success">
+    <div class="jumbotron mb-0 rounded-0 story text-secondary">
         <div class="container">
-            <h1>Our Story</h1>
-            <p>This is a template for a simple marketing or informational website. It includes a large callout
-                called a jumbotron and three supporting pieces of content. Use it as a starting point to create
-                something more unique.</p>
-            <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+            <div class="row">
+                <div class="col-md-4">
+                    <h1 class="display-4 title-font mr-2" style="display: inline; color: #9e332b;">Start</h1>
+                    <h2 class="title-font" style="display: inline; color: #9e332b;">your</h2>
+                    <h1 class="text-dark header-font display-4"> <b>Journey</b> </h1>
+                    <p><a class="btn btn-lg my-button" href="register.html" role="button">Register</a></p>
+                </div>
+                <div class="col">
+                    <p class="col-md-6 p-0 content-font text-justify" style="font-size: 18px;">The journey isn't about
+                        perfection.
+                        It's about progression
+                        It's not about being perfect, it's about becoming better
+                        Take your step, because the journey of a thousand miles begins with one step.
+                        Don't waste your time. Don't do nothing.
+                        Take the action.
+                        See the beauty of This World.</p>
+                </div>
+            </div>
         </div>
     </div>
 
     <!-- Top-Seller Book -->
-    <div id="mycarousel" class="carousel slide bg-danger text-center" data-ride="carousel">
-        <ol class="carousel-indicators">
-            <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#mycarousel" data-slide-to="1"></li>
-            <li data-target="#mycarousel" data-slide-to="2"></li>
-        </ol>
+    <div id="mycarousel" class="carousel slide text-center slider" data-ride="carousel">
+        <h2 class="mb-0 pt-3 text-white display-2 title-font" style="color: #cecac6;">Fresh Book</h2>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img class="my-5 img-thumbnail" src="image/book.jpg" alt="First slide">
+                <img class="my-2" src="image/books/20.png" alt="First slide" height="300">
+                <p class="text-danger header-font mb-0" style="font-size: 30px;">What Kitty Did ?</p>
+                <p class="text-white header-font">Trisha Bora</p>
             </div>
             <div class="carousel-item">
-                <img class="my-5 img-thumbnail" src="image/book.jpg" alt="Second slide">
+                <img class="my-2" src="image/books/ads.png" alt="Second slide" height="300">
+                <p class="text-danger header-font mb-0" style="font-size: 30px;">There There</p>
+                <p class="text-white header-font">Tommy Orange</p>
             </div>
             <div class="carousel-item">
-                <img class="my-5 img-thumbnail" src="image/book.jpg" alt="Third slide">
+                <img class="my-2" src="image/books/asdadff.png" alt="Third slide" height="300">
+                <p class="text-danger header-font mb-0" style="font-size: 30px;">Trouble With Men</p>
+                <p class="text-white header-font">Jason Michael</p>
             </div>
         </div>
         <a class="carousel-control-prev" href="#mycarousel" role="button" data-slide="prev">
@@ -99,50 +117,47 @@
     </div>
 
     <!-- Content -->
-    <div class="position-relative overflow-hidden p-3 p-md-3 text-center bg-light">
+    <div class="position-relative overflow-hidden p-3 p-md-3 text-center headline text-white">
         <div class="col-md-5 p-lg-5 mx-auto my-5">
-            <h1 class="display-4 font-weight-normal">Contoh Headline</h1>
-            <p class="lead font-weight-normal">And an even wittier subheading to boot. Jumpstart your marketing efforts
-                with this example based on Apple's marketing pages.</p>
-            <a class="btn btn-outline-secondary" href="register.html">Sign Up</a>
+            <h3 class="display-4 title-font" style="color: #cecac6;">Discover</h3>
+            <h1 class="title-font display-1" style="color: #9e332b;">The World</h1>
+            <a class="btn my-button" href="about.html">About Us</a>
         </div>
     </div>
 
     <!-- Footer -->
-    <footer class="px-4 pt-4 bg-dark text-white">
+    <footer class="px-4 pt-4 text-white footer">
         <div class="row">
-            <div class="col-12 col-md">
-                <img class="mb-2" src="image/logo.png" width="32" height="32">
-                <small class="d-block mb-3 text-muted">&copy; 2018-2019</small>
+            <div class="col-8 col-md">
+                <h5 class="mb-3 header-font font-weight-bold">WHERE WE AT ?</h5>
+                <div class="content-font">
+                    <p class="mb-0">Jln Alam Pesona No. 50</p>
+                    <p class="mb-0">Sentul 16810</p>
+                    <p>+081-234567890</p>
+                </div>
             </div>
-            <div class="col-6 col-md">
-                <h5>Features</h5>
-                <ul class="list-unstyled text-small">
-                    <li><a class="text-muted" href="#">Cool stuff</a></li>
-                    <li><a class="text-muted" href="#">Random feature</a></li>
-                    <li><a class="text-muted" href="#">Team feature</a></li>
-                    <li><a class="text-muted" href="#">Stuff for developers</a></li>
-                    <li><a class="text-muted" href="#">Another one</a></li>
-                    <li><a class="text-muted" href="#">Last time</a></li>
-                </ul>
+            <div class="col-8 col-md">
+                <h5 class="mb-3 header-font font-weight-bold">WORK HOURS</h5>
+                <div class="row content-font">
+                    <div class="col">
+                        <p class="mb-0">Wednesday - Friday</p>
+                        <p style="font-size: 18px; font-weight: bold">12:00pm - 09:00pm</p>
+                    </div>
+                    <div class="col">
+                        <p class="mb-0">Saturday - Sunday</p>
+                        <p style="font-size: 18px; font-weight: bold">12:00pm - 11:00pm</p>
+                    </div>
+                </div>
+
             </div>
-            <div class="col-6 col-md">
-                <h5>Resources</h5>
-                <ul class="list-unstyled text-small">
-                    <li><a class="text-muted" href="#">Resource</a></li>
-                    <li><a class="text-muted" href="#">Resource name</a></li>
-                    <li><a class="text-muted" href="#">Another resource</a></li>
-                    <li><a class="text-muted" href="#">Final resource</a></li>
-                </ul>
-            </div>
-            <div class="col-6 col-md">
-                <h5>About</h5>
-                <ul class="list-unstyled text-small">
-                    <li><a class="text-muted" href="#">Team</a></li>
-                    <li><a class="text-muted" href="#">Locations</a></li>
-                    <li><a class="text-muted" href="#">Privacy</a></li>
-                    <li><a class="text-muted" href="#">Terms</a></li>
-                </ul>
+            <div class="col-8 col-md pl-5">
+                <h5 class="mb-3 header-font font-weight-bold">SOCIAL NETWORKS</h5>
+                <div class="content-font">
+                    <a href="#"><i class="fa fa-facebook fa-social"></i></a>
+                    <a href="#"><i class="fa fa-twitter fa-social"></i></a>
+                    <a href="#"><i class="fa fa-instagram fa-social"></i></a>
+                    <p class="mt-4 text-muted">thislibrary.com</p>
+                </div>
             </div>
         </div>
     </footer>

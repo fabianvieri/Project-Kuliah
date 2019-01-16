@@ -14,7 +14,7 @@
 
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top my-navbar">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top my-navbar content-font">
         <a class="navbar-brand" href="#">This Library</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapse-target">
             <span class="navbar-toggler-icon"></span>
@@ -36,13 +36,13 @@
                 </li>
             </ul>
             <div class="btn-group">
-                <button type="button" class="btn btn-info btn-sm"> <i class="fa fa-user-circle-o"></i> Fabian Vieri</button>
-                <button type="button" class="btn btn-info dropdown-toggle dropdown-toggle-split btn-sm" data-toggle="dropdown"
+                <button type="button" class="btn my-button btn-sm"> <i class="fa fa-user-circle-o"></i> Fabian Vieri</button>
+                <button type="button" class="btn my-button dropdown-toggle dropdown-toggle-split btn-sm" data-toggle="dropdown"
                     aria-haspopup="true" aria-expanded="false">
                     <span class="sr-only">Toggle Dropdown</span>
                 </button>
                 <div class="dropdown-menu dropdown-menu-right">
-                    <a class="dropdown-item" href="notification.html">Notification <span class="badge badge-light">4</span></a>
+                    <a class="dropdown-item" href="notification.html">Notification <span class="badge badge-danger">4</span></a>
                     <a class="dropdown-item" href="edit.html">Edit Profile</a>
                     <a class="dropdown-item" href="login.html">Log Out</a>
                 </div>
@@ -51,26 +51,30 @@
     </nav>
 
     <!-- Header -->
-    <div class="jumbotron mb-0 rounded-0 text-center header bg-danger">
-        <div class="container text-center">
-            <h1 class="display-3">WELCOME TO THIS LIBRARY</h1>
-            <p class="text-center">Our library is one of the best in the world</p>
+    <div class="jumbotron mb-0 rounded-0 header">
+        <div class="container ">
+            <h1 class="title-font" style="color: #9e332b; font-size: 65.94pt;
+                    text-shadow: 3px 3px 30px white;">Preserving
+                The Past,</h1>
+            <h1 class="display-2 header-font text-center ml-5 text-white" style="font-size: 65.94pt;">opening the
+                future</h1>
         </div>
     </div>
 
-    <div class="container-fluid py-3 bg-primary">
+    <div class="container-fluid py-5" style="height: 541px; background-image: url('image/editProfile/editProfile_02.jpg')">
         <div class="mx-auto col-sm-5">
             <div class="card">
                 <div class="card-header">
-                    <h4 class="mb-0 text-secondary">User Information</h4>
+                    <h4 class="mb-0 text-secondary header-font">User Information</h4>
                     <small>User id : 2101724466</small>
                 </div>
-                <div class="card-body">
+                <div class="card-body content-font">
                     <form class="form" role="form" autocomplete="off">
                         <div class="form-group row">
                             <label class="col-lg-3 col-form-label form-control-label">First name</label>
                             <div class="col-lg-9 input-group">
-                                <input class="form-control" type="text" name="firstname" disabled value="Fabian">
+                                <input class="form-control" type="text" name="firstname" disabled value="Fabian"
+                                    required>
                                 <div class="input-group-append">
                                     <button class="btn btn-outline-secondary" type="button" onclick="func()" id="btnfirstname">Edit</button>
                                 </div>
@@ -79,7 +83,7 @@
                         <div class="form-group row">
                             <label class="col-lg-3 col-form-label form-control-label">Last name</label>
                             <div class="col-lg-9 input-group">
-                                <input class="form-control" type="text" name="lastname" disabled value="Vieri">
+                                <input class="form-control" type="text" name="lastname" disabled value="Vieri" required>
                                 <div class="input-group-append">
                                     <button class="btn btn-outline-secondary" type="button" onclick="func()" id="btnlastname">Edit</button>
                                 </div>
@@ -88,7 +92,8 @@
                         <div class="form-group row">
                             <label class="col-lg-3 col-form-label form-control-label">Email</label>
                             <div class="col-lg-9 input-group">
-                                <input class="form-control" type="email" name="email" disabled value="vierifabian@gmail.com">
+                                <input class="form-control" type="email" name="email" disabled value="vierifabian@gmail.com"
+                                    required>
                                 <div class="input-group-append">
                                     <button class="btn btn-outline-secondary" type="button" onclick="func()" id="btnemail">Edit</button>
                                 </div>
@@ -97,7 +102,8 @@
                         <div class="form-group row">
                             <label class="col-lg-3 col-form-label form-control-label">Address</label>
                             <div class="col-lg-9 input-group">
-                                <input class="form-control" type="email" name="address" disabled value="Jln. Alam Pesona No.50">
+                                <input class="form-control" type="email" name="address" disabled value="Jln. Alam Pesona No.50"
+                                    required>
                                 <div class="input-group-append">
                                     <button class="btn btn-outline-secondary" type="button" onclick="func()" id="btnaddress">Edit</button>
                                 </div>
@@ -106,7 +112,8 @@
                         <div class="form-group row">
                             <label class="col-lg-3 col-form-label form-control-label">Username</label>
                             <div class="col-lg-9 input-group">
-                                <input class="form-control" type="text" name="username" disabled value="Fabian Vieri">
+                                <input class="form-control" type="text" name="username" disabled value="Fabian Vieri"
+                                    required>
                                 <div class="input-group-append">
                                     <button class="btn btn-outline-secondary" type="button" onclick="func()" id="btnusername">Edit</button>
                                 </div>
@@ -116,7 +123,7 @@
                             <label class="col-lg-3 col-form-label form-control-label"></label>
                             <div class="col-lg-9">
                                 <input type="reset" class="btn btn-secondary" value="Cancel">
-                                <input type="submit" class="btn btn-primary" value="Save Changes">
+                                <input type="submit" class="btn my-button" value="Save Changes">
                             </div>
                         </div>
                     </form>
@@ -126,40 +133,38 @@
     </div>
 
     <!-- Footer -->
-    <footer class="px-4 pt-4 bg-dark text-white">
+    <footer class="px-4 pt-4 text-white footer">
         <div class="row">
-            <div class="col-12 col-md">
-                <img class="mb-2" src="image/logo.png" alt="" width="32" height="32">
-                <small class="d-block mb-3 text-muted">&copy; 2018-2019</small>
+            <div class="col-8 col-md">
+                <h5 class="mb-3 header-font font-weight-bold">WHERE WE AT ?</h5>
+                <div class="content-font">
+                    <p class="mb-0">Jln Alam Pesona No. 50</p>
+                    <p class="mb-0">Sentul 16810</p>
+                    <p>+081-234567890</p>
+                </div>
             </div>
-            <div class="col-6 col-md">
-                <h5>Features</h5>
-                <ul class="list-unstyled text-small">
-                    <li><a class="text-muted" href="#">Cool stuff</a></li>
-                    <li><a class="text-muted" href="#">Random feature</a></li>
-                    <li><a class="text-muted" href="#">Team feature</a></li>
-                    <li><a class="text-muted" href="#">Stuff for developers</a></li>
-                    <li><a class="text-muted" href="#">Another one</a></li>
-                    <li><a class="text-muted" href="#">Last time</a></li>
-                </ul>
+            <div class="col-8 col-md">
+                <h5 class="mb-3 header-font font-weight-bold">WORK HOURS</h5>
+                <div class="row content-font">
+                    <div class="col">
+                        <p class="mb-0">Wednesday - Friday</p>
+                        <p style="font-size: 18px; font-weight: bold">12:00pm - 09:00pm</p>
+                    </div>
+                    <div class="col">
+                        <p class="mb-0">Saturday - Sunday</p>
+                        <p style="font-size: 18px; font-weight: bold">12:00pm - 11:00pm</p>
+                    </div>
+                </div>
+
             </div>
-            <div class="col-6 col-md">
-                <h5>Resources</h5>
-                <ul class="list-unstyled text-small">
-                    <li><a class="text-muted" href="#">Resource</a></li>
-                    <li><a class="text-muted" href="#">Resource name</a></li>
-                    <li><a class="text-muted" href="#">Another resource</a></li>
-                    <li><a class="text-muted" href="#">Final resource</a></li>
-                </ul>
-            </div>
-            <div class="col-6 col-md">
-                <h5>About</h5>
-                <ul class="list-unstyled text-small">
-                    <li><a class="text-muted" href="#">Team</a></li>
-                    <li><a class="text-muted" href="#">Locations</a></li>
-                    <li><a class="text-muted" href="#">Privacy</a></li>
-                    <li><a class="text-muted" href="#">Terms</a></li>
-                </ul>
+            <div class="col-8 col-md pl-5">
+                <h5 class="mb-3 header-font font-weight-bold">SOCIAL NETWORKS</h5>
+                <div class="content-font">
+                    <a href="#"><i class="fa fa-facebook fa-social"></i></a>
+                    <a href="#"><i class="fa fa-twitter fa-social"></i></a>
+                    <a href="#"><i class="fa fa-instagram fa-social"></i></a>
+                    <p class="mt-4 text-muted">thislibrary.com</p>
+                </div>
             </div>
         </div>
     </footer>

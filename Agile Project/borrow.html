@@ -14,8 +14,8 @@
 
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top my-navbar">
-        <a class="navbar-brand" href="#">This Library</a>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top my-navbar content-font">
+        <a class="navbar-brand" href="#">Fabian's Library</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapse-target">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -36,13 +36,13 @@
                 </li>
             </ul>
             <div class="btn-group">
-                <button type="button" class="btn btn-info btn-sm"> <i class="fa fa-user-circle-o"></i> Fabian Vieri</button>
-                <button type="button" class="btn btn-info dropdown-toggle dropdown-toggle-split btn-sm" data-toggle="dropdown"
+                <button type="button" class="btn my-button btn-sm"> <i class="fa fa-user-circle-o"></i> Fabian Vieri</button>
+                <button type="button" class="btn my-button dropdown-toggle dropdown-toggle-split btn-sm" data-toggle="dropdown"
                     aria-haspopup="true" aria-expanded="false">
                     <span class="sr-only">Toggle Dropdown</span>
                 </button>
                 <div class="dropdown-menu dropdown-menu-right">
-                    <a class="dropdown-item" href="notification.html">Notification <span class="badge badge-light">4</span></a>
+                    <a class="dropdown-item" href="notification.html">Notification <span class="badge badge-danger">4</span></a>
                     <a class="dropdown-item" href="edit.html">Edit Profile</a>
                     <a class="dropdown-item" href="login.html">Log Out</a>
                 </div>
@@ -51,14 +51,18 @@
     </nav>
 
     <!-- Header -->
-    <div class="jumbotron mb-0 rounded-0 text-center header bg-danger">
-        <div class="container text-center">
-            <h1 class="display-3">WELCOME TO THIS LIBRARY</h1>
-            <p class="text-center">Our library is one of the best in the world</p>
+    <div class="jumbotron mb-0 rounded-0" style="height: 350px; background-image: url('image/catalogue/catalogue_01.jpg')">
+        <div class="container ">
+            <h1 class="title-font" style="color: #9e332b; font-size: 65.94pt;
+                    text-shadow: 3px 3px 30px white;">Preserving
+                The Past,</h1>
+            <h1 class="display-2 header-font text-center ml-5 text-white" style="font-size: 65.94pt;">opening the
+                future</h1>
         </div>
     </div>
-    <div class="container-fluid bg-primary">
-        <h2 class="pt-2 text-white">Borrow Book</h2>
+
+    <div class="container-fluid bg-primary" style="height: 765px; background-image: url('image/borrow/borrow_02.jpg')">
+        <h2 class="pt-3 text-dark header-font">Borrow Book</h2>
         <br>
         <!-- Nav tabs -->
         <ul class="nav nav-tabs">
@@ -73,7 +77,7 @@
         <!-- Tab panes -->
         <div class="tab-content">
             <div id="home" class="container-fluid tab-pane active"><br>
-                <h3>Search Books</h3>
+                <h3 class="text-dark header-font">Search Books</h3>
                 <form>
                     <div class="form-row">
                         <div class="col">
@@ -103,12 +107,14 @@
                 <div class="container mx-0">
                     <div class="row p-3">
                         <div class="col-md-1 p-0">
-                            <img src="image/prism.png" alt="..." class="img-thumbnail" width="100" height="100">
+                            <img src="image/books/bener.png" alt="..." class="img-thumbnail" width="100" height="100">
                         </div>
-                        <div class="col-md-11">
+                        <div class="col-md-11 content-font">
                             <div class="row">
                                 <div class="col">
-                                    <p class="mb-0">Title : Petualangan Si Bolang <br> Copy : 5 <br> Price : 2000/day</p>
+                                    <p class="mb-0">Title : Teleportation Accident <br> Available Copy : 0 <br> Author
+                                        : Ned Beauman
+                                        <br> <a href="catalogue.html" class="text-primary">Read More</a></p>
                                 </div>
                                 <div class="col">
                                     <button type="button" class="btn btn-danger float-right">Hold</button>
@@ -116,15 +122,17 @@
                             </div>
                         </div>
                     </div>
-                    <hr class="my-1">
+                    <hr class="my-0">
                     <div class="row p-3">
                         <div class="col-md-1 p-0">
-                            <img src="image/prism.png" alt="..." class="img-thumbnail" width="100" height="100">
+                            <img src="image/books/lplplp.png" alt="..." class="img-thumbnail" width="100" height="100">
                         </div>
-                        <div class="col-md-11">
+                        <div class="col-md-11 content-font">
                             <div class="row">
                                 <div class="col">
-                                    <p class="mb-0">Title : Petualangan Si Bolang <br> Copy : 5 <br> Price : 2000/day</p>
+                                    <p class="mb-0">Title : Bidget Jones's Diary <br> Available Copy : 1 <br> Author :
+                                        Helen Fielding
+                                        <br> <a href="catalogue.html" class="text-primary">Read More</a></p>
                                 </div>
                                 <div class="col">
                                     <button type="button" class="btn btn-danger float-right">Hold</button>
@@ -132,15 +140,17 @@
                             </div>
                         </div>
                     </div>
-                    <hr class="my-1">
+                    <hr class="my-0">
                     <div class="row p-3">
                         <div class="col-md-1 p-0">
-                            <img src="image/prism.png" alt="..." class="img-thumbnail" width="100" height="100">
+                            <img src="image/books/girl.png" alt="..." class="img-thumbnail" width="100" height="100">
                         </div>
-                        <div class="col-md-11">
+                        <div class="col-md-11 content-font">
                             <div class="row">
                                 <div class="col">
-                                    <p class="mb-0">Title : Petualangan Si Bolang <br> Copy : 5 <br> Price : 2000/day</p>
+                                    <p class="mb-0">Title : Mother Stories <br> Available Copy : 2 <br> Author :
+                                        Chris Power
+                                        <br> <a href="catalogue.html" class="text-primary">Read More</a></p>
                                 </div>
                                 <div class="col">
                                     <button type="button" class="btn btn-danger float-right">Hold</button>
@@ -151,8 +161,8 @@
                 </div>
             </div>
             <div id="menu1" class="container-fluid tab-pane fade p-2"><br>
-                <h3>Your Holds</h3>
-                <table class="table table-bordered mb-0">
+                <h3 class="text-dark mb-3 header-font">Your Holds</h3>
+                <table class="table table-bordered mb-0 content-font">
                     <thead>
                         <tr>
                             <th scope="col">No</th>
@@ -165,74 +175,98 @@
                     <tbody>
                         <tr>
                             <th scope="row">1</th>
-                            <td>Title 1</td>
-                            <td>Publisher 1</td>
-                            <td>Author 1</td>
+                            <td>What Kitty Did ?</td>
+                            <td>Harper Collins</td>
+                            <td>Trisha Bora</td>
                             <td>Waiting
                                 <button type="button" class="btn btn-danger btn-sm float-right fa fa-remove"></button>
                             </td>
                         </tr>
                         <tr>
                             <th scope="row">2</th>
-                            <td>Title 2</td>
-                            <td>Publisher 2</td>
-                            <td>Author 2</td>
+                            <td>There There</td>
+                            <td>Knopf</td>
+                            <td>Tommy Orange</td>
                             <td>Ready - 1d:20h
                                 <button type="button" class="btn btn-danger btn-sm float-right fa fa-remove"></button>
                             </td>
                         </tr>
                         <tr>
                             <th scope="row">3</th>
-                            <td>Title 3</td>
-                            <td>Publisher 3</td>
-                            <td>Author 3</td>
+                            <td>Trouble With Men</td>
+                            <td>New Holland Australia</td>
+                            <td>Jason Michael</td>
                             <td>Waiting
                                 <button type="button" class="btn btn-danger btn-sm float-right fa fa-remove"></button>
                             </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>Teleportation Accident</td>
+                            <td>Bloomsburry USA</td>
+                            <td>Ned Beauman</td>
+                            <td>Waiting
+                                <button type="button" class="btn btn-danger btn-sm float-right fa fa-remove"></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">5</th>
+                            <td>Bidget Jones's Diary</td>
+                            <td>Picador</td>
+                            <td>Helen Fielding</td>
+                            <td>On Hand</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">6</th>
+                            <td>Mother Stories</td>
+                            <td>Farar, Straur, Giraux</td>
+                            <td>Chris Power</td>
+                            <td>On Hand</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
         </div>
     </div>
+
     <!-- Footer -->
-    <footer class="px-4 pt-4 mt-0 bg-dark text-white">
+    <footer class="px-4 pt-4 text-white" style="background-image: url('image/borrow/borrow_03.jpg')">
         <div class="row">
-            <div class="col-12 col-md">
-                <img class="mb-2" src="image/logo.png" alt="" width="32" height="32">
-                <small class="d-block mb-3 text-muted">&copy; 2018-2019</small>
+            <div class="col-8 col-md">
+                <h5 class="mb-3 header-font font-weight-bold">WHERE WE AT ?</h5>
+                <div class="content-font">
+                    <p class="mb-0">Jln Alam Pesona No. 50</p>
+                    <p class="mb-0">Sentul 16810</p>
+                    <p>+081-234567890</p>
+                </div>
             </div>
-            <div class="col-6 col-md">
-                <h5>Features</h5>
-                <ul class="list-unstyled text-small">
-                    <li><a class="text-muted" href="#">Cool stuff</a></li>
-                    <li><a class="text-muted" href="#">Random feature</a></li>
-                    <li><a class="text-muted" href="#">Team feature</a></li>
-                    <li><a class="text-muted" href="#">Stuff for developers</a></li>
-                    <li><a class="text-muted" href="#">Another one</a></li>
-                    <li><a class="text-muted" href="#">Last time</a></li>
-                </ul>
+            <div class="col-8 col-md">
+                <h5 class="mb-3 header-font font-weight-bold">WORK HOURS</h5>
+                <div class="row content-font">
+                    <div class="col">
+                        <p class="mb-0">Wednesday - Friday</p>
+                        <p style="font-size: 18px; font-weight: bold">12:00pm - 09:00pm</p>
+                    </div>
+                    <div class="col">
+                        <p class="mb-0">Saturday - Sunday</p>
+                        <p style="font-size: 18px; font-weight: bold">12:00pm - 11:00pm</p>
+                    </div>
+                </div>
+
             </div>
-            <div class="col-6 col-md">
-                <h5>Resources</h5>
-                <ul class="list-unstyled text-small">
-                    <li><a class="text-muted" href="#">Resource</a></li>
-                    <li><a class="text-muted" href="#">Resource name</a></li>
-                    <li><a class="text-muted" href="#">Another resource</a></li>
-                    <li><a class="text-muted" href="#">Final resource</a></li>
-                </ul>
-            </div>
-            <div class="col-6 col-md">
-                <h5>About</h5>
-                <ul class="list-unstyled text-small">
-                    <li><a class="text-muted" href="#">Team</a></li>
-                    <li><a class="text-muted" href="#">Locations</a></li>
-                    <li><a class="text-muted" href="#">Privacy</a></li>
-                    <li><a class="text-muted" href="#">Terms</a></li>
-                </ul>
+            <div class="col-8 col-md pl-5">
+                <h5 class="mb-3 header-font font-weight-bold">SOCIAL NETWORKS</h5>
+                <div class="content-font">
+                    <a href="#"><i class="fa fa-facebook fa-social"></i></a>
+                    <a href="#"><i class="fa fa-twitter fa-social"></i></a>
+                    <a href="#"><i class="fa fa-instagram fa-social"></i></a>
+                    <p class="mt-4 text-muted">thislibrary.com</p>
+                </div>
+
             </div>
         </div>
     </footer>
+
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>

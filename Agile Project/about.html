@@ -11,202 +11,217 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>About</title>
     <style>
-        .profile-card-2 .card-img-block {
-            float: left;
-            width: 100%;
-            height: 150px;
-            overflow: hidden;
-        }
-
-        .profile-card-2 .card-body {
-            position: relative;
-        }
-
-        .profile-card-2 .profile {
-            border-radius: 50%;
-            position: absolute;
-            top: -42px;
-            left: 15%;
-            max-width: 75px;
-            border: 3px solid rgba(255, 255, 255, 1);
-            -webkit-transform: translate(-50%, 0%);
-            transform: translate(-50%, 0%);
-        }
-
-        .profile-card-2 h5 {
+        .about-title h1 {
+            color: #535353;
+            font-size: 45px;
             font-weight: 600;
-            color: #007bff;
         }
 
-        .profile-card-2 .card-text {
-            font-weight: 300;
-            font-size: 15px;
+        .about-title span {
+            color: #AF0808;
+            font-size: 45px;
+            font-weight: 700;
         }
 
-        .profile-card-2 .icon-block {
-            float: left;
-            width: 100%;
+        .about-title h3 {
+            color: #535353;
+            font-size: 23px;
+            margin-bottom: 24px;
         }
 
-        .profile-card-2 .icon-block a {
-            text-decoration: none;
+        .about-title p {
+            color: #7a7a7a;
+            line-height: 1.8;
+            margin: 0 0 15px;
         }
 
-        .profile-card-2 i {
+        .about-paddingB {
+            padding-bottom: 12px;
+        }
+
+        .about-img {
+            padding-left: 57px;
+        }
+
+        .about-icons {
+            margin: 48px 0px 48px 0px;
+        }
+
+        .about-icons i {
+            margin-right: 10px;
+            padding: 0px;
+            font-size: 35px;
+            color: #323232;
+            box-shadow: 0 0 3px rgba(0, 0, 0, .2);
+        }
+
+        .about-icons li {
+            margin: 0px;
+            padding: 0;
             display: inline-block;
-            font-size: 16px;
-            color: #007bff;
-            text-align: center;
-            border: 1px solid #007bff;
-            width: 30px;
-            height: 30px;
-            line-height: 30px;
-            border-radius: 50%;
-            margin: 0 5px;
         }
 
-        .profile-card-2 i:hover {
-            background-color: #007bff;
-            color: #fff;
+        #social-fb:hover {
+            color: #3B5998;
+            transition: all .001s;
         }
 
-        .section {
-            float: left;
-            width: 100%;
-            background: #fff;
-            padding: 30px 0;
+        #social-tw:hover {
+            color: #4099FF;
+            transition: all .001s;
         }
 
-        .promote {
-            border: 1px dashed #ddd;
-            display: flex;
-            height: 100%;
-            justify-content: center;
-            flex-direction: column;
-            align-items: stretch;
+        #social-gp:hover {
+            color: #d34836;
+            transition: all .001s;
         }
 
-        .col-md-4 {
-            padding: 15px;
+        #social-em:hover {
+            color: #f39c12;
+            transition: all .001s;
         }
     </style>
 </head>
 
 <body>
-    <div class="section">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top my-navbar content-font">
+        <a class="navbar-brand" href="#">Fabian's Library</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapse-target">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="collapse-target">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="catalogue.html">Catalogue</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="borrow.html">Borrow</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+            </ul>
+            <div class="btn-group">
+                <button type="button" class="btn my-button btn-sm"> <i class="fa fa-user-circle-o"></i> Fabian Vieri</button>
+                <button type="button" class="btn my-button dropdown-toggle dropdown-toggle-split btn-sm" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    <span class="sr-only">Toggle Dropdown</span>
+                </button>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="notification.html">Notification <span class="badge badge-danger">4</span></a>
+                    <a class="dropdown-item" href="edit.html">Edit Profile</a>
+                    <a class="dropdown-item" href="login.html">Log Out</a>
                 </div>
             </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <div class="jumbotron mb-0 rounded-0 header">
+        <div class="container ">
+            <h1 class="title-font" style="color: #9e332b; font-size: 65.94pt;
+                text-shadow: 3px 3px 30px white;">Preserving
+                The Past,</h1>
+            <h1 class="display-2 header-font text-center ml-5 text-white" style="font-size: 65.94pt;">opening the
+                future</h1>
+        </div>
+    </div>
+
+    <div class="about-section py-5 bg-light" style="height: 765px; background-image: url('image/about/about_02.jpg')">
+        <div class="container ml-5">
             <div class="row">
-                <div class="col-md-4 first">
-                    <div class="promote">
-                        <h1 class="text-center h2"><span>Bootstrap 4 <br />Social Profile Cards </span><br />Created
-                            with ♥ <br /> from <a href="https://shurvir.blogspot.com/?utm_source=bootsnipp&utm_medium=bootsnipp"
-                                target="_blank">shurvir.blogspot .com</a><br /> by Shurvir Mori</h1>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card profile-card-2">
-                        <div class="card-img-block">
-                            <img class="img-fluid" src="https://images.pexels.com/photos/877695/pexels-photo-877695.jpeg?auto=compress&cs=tinysrgb&h=350"
-                                alt="Card image cap" />
-                        </div>
-                        <div class="card-body pt-5">
-                            <img src="https://randomuser.me/api/portraits/women/81.jpg" alt="profile-image" class="profile" />
-                            <h5 class="card-title">Shurvir Mori</h5>
-                            <p class="card-text">Lorem Ipsum is simply dummy text Lorem Ipsum has been the industry's
-                                standard dummy text</p>
-                            <div class="icon-block"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"> <i class="fa fa-twitter"></i></a><a
-                                    href="#"> <i class="fa fa-google-plus"></i></a></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card profile-card-2">
-                        <div class="card-img-block">
-                            <img class="img-fluid" src="https://images.pexels.com/photos/877695/pexels-photo-877695.jpeg?auto=compress&cs=tinysrgb&h=350"
-                                alt="Card image cap" />
-                        </div>
-                        <div class="card-body pt-5">
-                            <img src="https://randomuser.me/api/portraits/women/81.jpg" alt="profile-image" class="profile" />
-                            <h5 class="card-title">Shurvir Mori</h5>
-                            <p class="card-text">Lorem Ipsum is simply dummy text Lorem Ipsum has been the industry's
-                                standard dummy text</p>
-                            <div class="icon-block"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"> <i class="fa fa-twitter"></i></a><a
-                                    href="#"> <i class="fa fa-google-plus"></i></a></div>
+                <div class="col-md-7 col-sm-6">
+                    <div class="about-title clearfix">
+                        <h1 class="header-font">About <span>Fabian's Library</span></h1>
+                        <p class="text-justify text-dark col-11 pl-0 content-font"> <b>Welcome to Fabian's Library</b>
+                            <br>
+                            We provide a place for those of you who want to improve, explore, and gain more experience
+                            about life. <br>
+                            This library was built on 1966 by Mr Fabian, in which this library name implies. <br>
+                            Mr Fabian was a great inventor also professor on 20th century. He built this library
+                            because on that era, there are so many people who want to learn and learn some books, yet
+                            didn't have any money to buy a book. So Mr Fabian tried to solve this problem, by built a
+                            charge-free library called “The Library”, so people could enjoy learn something new.
+                            In 1994, Mr Fabian died and the library was run by his younger sister named Mrs Sarah. To
+                            commemorate his amazing services to society, his sister and all of the library’s board
+                            decided to change the name of the library to “Fabian’s Library”. Until this time, Fabian’s
+                            Library is very famous all around the world, including Singapore, China, Indonesia, Brazil,
+                            and many more. <br>
+                            To keep up with globalization, Mrs Sarah decided to make an online library, so people all
+                            around the world can access Fabian’s Library more easily and also to commemorate Mr
+                            Fabian’s great services to society.
+                            So feel free to enjoy and explore more about life in this library!</p>
+                        <div class="about-icons">
+                            <ul class="p-0">
+                                <li><a href="https://www.facebook.com/"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
+                                </li>
+                                <li><a href="https://twitter.com/"><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i></a>
+                                </li>
+                                <li> <a href="https://plus.google.com/"><i id="social-gp" class="fa fa-google-plus-square fa-3x social"></i></a>
+                                </li>
+                                <li> <a href="mailto:bootsnipp@gmail.com"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
+
                 </div>
-                <div class="col-md-4">
-                    <div class="card profile-card-2">
-                        <div class="card-img-block">
-                            <img class="img-fluid" src="https://images.pexels.com/photos/877695/pexels-photo-877695.jpeg?auto=compress&cs=tinysrgb&h=350"
-                                alt="Card image cap" />
-                        </div>
-                        <div class="card-body pt-5">
-                            <img src="image/prism.png" alt="profile-image" class="profile" />
-                            <h5 class="card-title">Shurvir Mori</h5>
-                            <p class="card-text">Lorem Ipsum is simply dummy text Lorem Ipsum has been the industry's
-                                standard dummy text</p>
-                            <div class="icon-block"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"> <i class="fa fa-twitter"></i></a><a
-                                    href="#"> <i class="fa fa-google-plus"></i></a></div>
-                        </div>
+                <div class="col-5">
+                    <img src="image/about-image.png" alt="" height="550">
+                </div>
+                <div class="col-md-5 col-sm-6">
+                    <div class="about-img">
+                        <img src="https://devitems.com/preview/appmom/img/mobile/2.png" alt="">
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card profile-card-2">
-                        <div class="card-img-block">
-                            <img class="img-fluid" src="https://images.pexels.com/photos/877695/pexels-photo-877695.jpeg?auto=compress&cs=tinysrgb&h=350"
-                                alt="Card image cap" />
-                        </div>
-                        <div class="card-body pt-5">
-                            <img src="https://randomuser.me/api/portraits/women/81.jpg" alt="profile-image" class="profile" />
-                            <h5 class="card-title">Shurvir Mori</h5>
-                            <p class="card-text">Lorem Ipsum is simply dummy text Lorem Ipsum has been the industry's
-                                standard dummy text</p>
-                            <div class="icon-block"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"> <i class="fa fa-twitter"></i></a><a
-                                    href="#"> <i class="fa fa-google-plus"></i></a></div>
-                        </div>
-                    </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="px-4 pt-4 text-white footer">
+        <div class="row">
+            <div class="col-8 col-md">
+                <h5 class="mb-3 header-font font-weight-bold">WHERE WE AT ?</h5>
+                <div class="content-font">
+                    <p class="mb-0">Jln Alam Pesona No. 50</p>
+                    <p class="mb-0">Sentul 16810</p>
+                    <p>+081-234567890</p>
                 </div>
-                <div class="col-md-4">
-                    <div class="card profile-card-2">
-                        <div class="card-img-block">
-                            <img class="img-fluid" src="https://images.pexels.com/photos/877695/pexels-photo-877695.jpeg?auto=compress&cs=tinysrgb&h=350"
-                                alt="Card image cap" />
-                        </div>
-                        <div class="card-body pt-5">
-                            <img src="https://randomuser.me/api/portraits/women/81.jpg" alt="profile-image" class="profile" />
-                            <h5 class="card-title">Shurvir Mori</h5>
-                            <p class="card-text">Lorem Ipsum is simply dummy text Lorem Ipsum has been the industry's
-                                standard dummy text</p>
-                            <div class="icon-block"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"> <i class="fa fa-twitter"></i></a><a
-                                    href="#"> <i class="fa fa-google-plus"></i></a></div>
-                        </div>
+            </div>
+            <div class="col-8 col-md">
+                <h5 class="mb-3 header-font font-weight-bold">WORK HOURS</h5>
+                <div class="row content-font">
+                    <div class="col">
+                        <p class="mb-0">Wednesday - Friday</p>
+                        <p style="font-size: 18px; font-weight: bold">12:00pm - 09:00pm</p>
                     </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card profile-card-2">
-                        <div class="card-img-block">
-                            <img class="img-fluid" src="https://images.pexels.com/photos/877695/pexels-photo-877695.jpeg?auto=compress&cs=tinysrgb&h=350"
-                                alt="Card image cap" />
-                        </div>
-                        <div class="card-body pt-5">
-                            <img src="https://randomuser.me/api/portraits/women/81.jpg" alt="profile-image" class="profile" />
-                            <h5 class="card-title">Shurvir Mori</h5>
-                            <p class="card-text">Lorem Ipsum is simply dummy text Lorem Ipsum has been the industry's
-                                standard dummy text</p>
-                            <div class="icon-block"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"> <i class="fa fa-twitter"></i></a><a
-                                    href="#"> <i class="fa fa-google-plus"></i></a></div>
-                        </div>
+                    <div class="col">
+                        <p class="mb-0">Saturday - Sunday</p>
+                        <p style="font-size: 18px; font-weight: bold">12:00pm - 11:00pm</p>
                     </div>
                 </div>
 
             </div>
+            <div class="col-8 col-md pl-5">
+                <h5 class="mb-3 header-font font-weight-bold">SOCIAL NETWORKS</h5>
+                <div class="content-font">
+                    <a href="#"><i class="fa fa-facebook fa-social"></i></a>
+                    <a href="#"><i class="fa fa-twitter fa-social"></i></a>
+                    <a href="#"><i class="fa fa-instagram fa-social"></i></a>
+                    <p class="mt-4 text-muted">thislibrary.com</p>
+                </div>
+
+            </div>
         </div>
-    </div>
+    </footer>
+
+    <!-- Javascript -->
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>

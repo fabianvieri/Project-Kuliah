@@ -9,12 +9,7 @@
     <link rel="stylesheet" href="css/template.css">
     <link rel="icon" type="image/png" sizes="16x16" href="image/favicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Notification</title>
-    <style>
-        .alert{
-            font-family: 'content';
-        }
-    </style>
+    <title>Staff Login</title>
 </head>
 
 <body>
@@ -28,30 +23,15 @@
         <div class="collapse navbar-collapse" id="collapse-target">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="home.html">Home</a>
+                    <a class="nav-link" href="onsite.html">Borrow</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="catalogue.html">Catalogue</a>
+                    <a class="nav-link" href="return.html">Return</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="borrow.html">Borrow</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="about.html">About</a>
+                    <a class="nav-link" href="request.html">Confirmation</a>
                 </li>
             </ul>
-            <div class="btn-group">
-                <button type="button" class="btn my-button btn-sm"> <i class="fa fa-user-circle-o"></i> Fabian Vieri</button>
-                <button type="button" class="btn my-button dropdown-toggle dropdown-toggle-split btn-sm" data-toggle="dropdown"
-                    aria-haspopup="true" aria-expanded="false">
-                    <span class="sr-only">Toggle Dropdown</span>
-                </button>
-                <div class="dropdown-menu dropdown-menu-right">
-                    <a class="dropdown-item" href="notification.html">Notification <span class="badge badge-danger">4</span></a>
-                    <a class="dropdown-item" href="edit.html">Edit Profile</a>
-                    <a class="dropdown-item" href="login.html">Log Out</a>
-                </div>
-            </div>
         </div>
     </nav>
 
@@ -59,43 +39,36 @@
     <div class="jumbotron mb-0 rounded-0 header">
         <div class="container ">
             <h1 class="title-font" style="color: #9e332b; font-size: 65.94pt;
-                        text-shadow: 3px 3px 30px white;">Preserving
+                            text-shadow: 3px 3px 30px white;">Preserving
                 The Past,</h1>
             <h1 class="display-2 header-font text-center ml-5 text-white" style="font-size: 65.94pt;">opening the
                 future</h1>
         </div>
     </div>
 
-    <div class="container-fluid p-3 bg-secondary" style="height: 436px; background-image: url('image/login/login_02.jpg')">
-        <div class="col-md-8">
-            <h3 class="mb-3 mt-5 text-white header-font">Notification</h3>
-            <div class="alert alert-warning alert-dismissible fade show" role="alert">
-                <strong>Pick Your Book</strong> Some Books in your holds are ready for pick up !
-                <strong class="float-right">1/5/2019</strong>
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="alert alert-success alert-dismissible fade show" role="alert">
-                <strong>Borrow Success</strong> You have complete the process of borrowing books
-                <strong class="float-right">1/15/2019</strong>
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="alert alert-danger alert-dismissible fade show" role="alert">
-                <strong>Removed Holds</strong> Some Books in your holds are removed for expired date
-                <strong class="float-right">27/12/2018</strong>
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="alert alert-success alert-dismissible fade show" role="alert">
-                <strong>Edit Confirmation</strong> Your changes are approved by the staff
-                <strong class="float-right">20/12/2018</strong>
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
+    <div class="container-fluid py-5 bg-primary" style="height: 435; background-image: url('image/login/login_02.jpg')">
+        <div class="col-md-8 mx-auto">
+            <div class="row">
+                <div class="col-md-6 mx-auto">
+                    <div class="card">
+                        <div class="card-header header-font">
+                            <h3 class="mb-0 header-font">Staff Login</h3>
+                        </div>
+                        <div class="card-body content-font">
+                            <form>
+                                <div class="form-group">
+                                    <label for="name">Staff Id</label>
+                                    <input type="text" class="form-control form-control-lg" id="name" value="Tesa123">
+                                </div>
+                                <div class="form-group">
+                                    <label for="pass">Password</label>
+                                    <input type="password" class="form-control form-control-lg" id="pass" value="123111111">
+                                </div>
+                                <button type="button" class="btn btn-lg float-right my-button" id="btnLogin" onclick="location.href = 'onsite.html'">Login</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -133,7 +106,6 @@
                     <a href="#"><i class="fa fa-instagram fa-social"></i></a>
                     <p class="mt-4 text-muted">thislibrary.com</p>
                 </div>
-
             </div>
         </div>
     </footer>
@@ -142,8 +114,6 @@
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-
-
 </body>
 
 </html>
